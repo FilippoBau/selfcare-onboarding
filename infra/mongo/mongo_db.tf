@@ -5,7 +5,7 @@ resource "azurerm_cosmosdb_mongo_database" "selc_onboarding" {
 }
 
 module "mongodb_collection_onboardings" {
-  source = "git::https://github.com/pagopa/terraform-azurerm-v3.git//cosmosdb_mongodb_collection?ref=v7.39.0"
+  source = "git::https://github.com/pagopa/terraform-azurerm-v3.git//cosmosdb_mongodb_collection?ref=v7.77.0"
 
   name                = "onboardings"
   resource_group_name = local.mongo_db.mongodb_rg_name
@@ -27,7 +27,7 @@ module "mongodb_collection_onboardings" {
 }
 
 module "mongodb_collection_tokens" {
-  source = "git::https://github.com/pagopa/terraform-azurerm-v3.git//cosmosdb_mongodb_collection?ref=v7.39.0"
+  source = "git::https://github.com/pagopa/terraform-azurerm-v3.git//cosmosdb_mongodb_collection?ref=v7.77.0"
 
   name                = "tokens"
   resource_group_name = local.mongo_db.mongodb_rg_name
